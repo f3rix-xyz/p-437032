@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import Features from "@/components/sections/Features";
+import Footer from "@/components/sections/Footer";
+import SearchBar from "@/components/ui/SearchBar";
 
-const Index = () => {
+// Placeholder image URL - replace with actual image in production
+const heroImageUrl =
+  "https://cdn.builder.io/api/v1/image/assets/TEMP/cdaeea5cb03fa0184784e428de3e074cc6ba6657?placeholderIfAbsent=true";
+
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Lexend:wght@300;400;500;600;700&family=Inter:wght@400;500&family=Mulish:wght@500&display=swap"
+        rel="stylesheet"
+      />
+      <div className="w-full min-h-screen bg-white">
+        <div className="flex flex-col items-center">
+          <div className="w-full max-w-[1920px] relative">
+            <div className="flex flex-col items-center">
+              <Navbar />
+              <Hero heroImageUrl={heroImageUrl} />
+              <SearchBar />
+              <Features />
+              <Footer />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
