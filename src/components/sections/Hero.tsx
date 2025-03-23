@@ -20,14 +20,19 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
       
       {/* Content overlay */}
       <div className="relative z-10 flex flex-col items-center text-center pt-[82px] pb-10 px-5">
-        <h1 className="text-[66px] font-bold text-[#080808] leading-[74px] max-w-[1500px] mb-3.5 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
+        <h1 className="font-['Lexend'] text-[66px] font-bold text-[#080808] leading-[74px] max-w-[1500px] mb-3.5 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
           Effortless Browsing, Intelligent Results.
         </h1>
-        <p className="text-3xl text-[#080808] font-light leading-10 max-w-[1245px] mb-[58px] max-md:text-2xl max-md:leading-8 max-sm:text-lg max-sm:leading-7">
+        <p className="font-['DM_Sans'] text-[30px] font-light text-[#080808] leading-[40px] tracking-[1%] max-w-[1245px] mb-[58px] max-md:text-2xl max-md:leading-8 max-sm:text-lg max-sm:leading-7">
           The Browser that skips online clutter and makes information easier to
           access.
         </p>
-        <CustomButton size="lg">Download Now</CustomButton>
+        <CustomButton 
+          size="lg" 
+          className="text-[30.08px] leading-[34.08px] px-[47px] py-[24px] font-['Lexend'] font-medium"
+        >
+          Download Now
+        </CustomButton>
       </div>
       
       <div className="relative z-10 w-full max-w-[1270px] mt-10 mx-auto">
