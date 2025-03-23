@@ -1,5 +1,6 @@
+
 import React from "react";
-import Button from "@/components/ui/Button";
+import CustomButton from "@/components/ui/CustomButton";
 
 interface HeroProps {
   heroImageUrl: string;
@@ -16,7 +17,7 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
           The Browser that skips online clutter and makes information easier to
           access.
         </p>
-        <Button size="lg">Download Now</Button>
+        <CustomButton size="lg">Download Now</CustomButton>
       </div>
       <div className="relative w-full max-w-[1270px] mt-10 mx-auto">
         <img

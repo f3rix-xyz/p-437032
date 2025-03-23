@@ -1,6 +1,7 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "@/components/ui/Button";
+import CustomButton from "@/components/ui/CustomButton";
 
 export const Navbar: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ export const Navbar: React.FC = () => {
           FAQ
         </Link>
       </div>
-      <Button>Download Now</Button>
+      <CustomButton>Download Now</CustomButton>
       <button className="hidden max-md:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"

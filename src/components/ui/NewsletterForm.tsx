@@ -1,5 +1,6 @@
+
 import React, { useState } from "react";
-import Button from "@/components/ui/Button";
+import CustomButton from "@/components/ui/CustomButton";
 
 export const NewsletterForm: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -35,9 +36,9 @@ export const NewsletterForm: React.FC = () => {
             className="flex-1 px-4 py-3 border-2 border-[#080808] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#110B53]"
             required
           />
-          <Button type="submit" className="px-6 py-3">
+          <CustomButton type="submit" className="px-6 py-3">
             Subscribe
-          </Button>
+          </CustomButton>
         </div>
         {isSubmitted && (
           <p className="mt-2 text-green-600">Thank you for subscribing!</p>
