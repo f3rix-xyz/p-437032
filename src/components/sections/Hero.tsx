@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
   return (
-    <div className="relative">
+    <div className="relative w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
       </div>
       
       {/* Content overlay */}
-      <div className="relative z-10 flex flex-col items-center text-center pt-[82px] pb-10 px-5">
+      <div className="relative z-10 flex flex-col items-center text-center pt-[82px] pb-10 px-5 w-full">
         <h1 className="font-['Lexend'] text-[66px] font-bold text-[#080808] leading-[74px] max-w-[1500px] mb-3.5 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
           Effortless Browsing, Intelligent Results.
         </h1>
