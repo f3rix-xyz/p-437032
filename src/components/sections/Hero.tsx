@@ -8,18 +8,18 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full h-screen flex flex-col justify-between overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://cdn.rtbrain.app/browser/Hero_BG_1742742329.svg+xml"
           alt="background"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
       
       {/* Content overlay */}
-      <div className="relative z-10 flex flex-col items-center text-center pt-[82px] pb-10 px-5 w-full">
+      <div className="relative z-10 flex flex-col items-center text-center pt-[82px] px-5 w-full">
         <h1 className="font-['Lexend'] text-[66px] font-bold text-[#080808] leading-[74px] max-w-[1500px] mb-3.5 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
           Effortless Browsing, Intelligent Results.
         </h1>
@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
         </CustomButton>
       </div>
       
-      <div className="relative z-10 w-full max-w-[1270px] mt-10 mx-auto">
+      <div className="relative z-10 w-full max-w-[1270px] mx-auto mt-auto pb-10">
         <img
           src={heroImageUrl}
           alt="hero image"
