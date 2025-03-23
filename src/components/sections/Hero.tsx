@@ -8,8 +8,18 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
   return (
-    <>
-      <div className="flex flex-col items-center text-center pt-[82px] pb-10 px-5">
+    <div className="relative">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://cdn.rtbrain.app/browser/Hero_BG_1742742329.svg+xml"
+          alt="background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      {/* Content overlay */}
+      <div className="relative z-10 flex flex-col items-center text-center pt-[82px] pb-10 px-5">
         <h1 className="text-[66px] font-bold text-[#080808] leading-[74px] max-w-[1500px] mb-3.5 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
           Effortless Browsing, Intelligent Results.
         </h1>
@@ -19,14 +29,15 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
         </p>
         <CustomButton size="lg">Download Now</CustomButton>
       </div>
-      <div className="relative w-full max-w-[1270px] mt-10 mx-auto">
+      
+      <div className="relative z-10 w-full max-w-[1270px] mt-10 mx-auto">
         <img
           src={heroImageUrl}
           alt="hero image"
           className="w-full h-auto filter drop-shadow-[0px_0px_76px_rgba(61,_57,_93,_0.25)]"
         />
       </div>
-    </>
+    </div>
   );
 };
 

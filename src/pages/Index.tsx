@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
@@ -13,10 +14,10 @@ const Index: React.FC = () => {
   return (
     <>
       <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Lexend:wght@300;400;500;600;700&family=Inter:wght@400;500&family=Mulish:wght@500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700&family=Inter:wght@400;500&family=Mulish:wght@500&display=swap"
         rel="stylesheet"
       />
-      <div className="w-full min-h-screen bg-white">
+      <div className="w-full min-h-screen bg-white overflow-hidden">
         <div className="flex flex-col items-center">
           <div className="w-full max-w-[1920px] relative">
             <div className="flex flex-col items-center">
