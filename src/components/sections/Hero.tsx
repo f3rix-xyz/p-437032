@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
         <img
           src="https://cdn.rtbrain.app/browser/Hero_BG_1742742329.svg+xml"
           alt="background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
       
