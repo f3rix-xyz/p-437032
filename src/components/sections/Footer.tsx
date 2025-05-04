@@ -17,8 +17,7 @@ export const Footer: React.FC = () => {
               />
             </div>
             <p className="text-[#080808] text-lg font-light mb-6">
-              The Browser that skips online clutter and makes information easier
-              to access.
+              Cut your Code and Paper Reading time by 50%.
             </p>
             <NewsletterForm />
           </div>

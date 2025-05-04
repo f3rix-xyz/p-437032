@@ -1,32 +1,27 @@
-
+// src/components/layout/Navbar.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Link might not be needed if button actions externally
 import CustomButton from "@/components/ui/CustomButton";
 
 export const Navbar: React.FC = () => {
   return (
     <nav className="w-full flex justify-between items-center px-[31px] py-[21px] max-md:px-5">
       <div className="flex items-center gap-2.5">
-        <img 
-          src="https://cdn.rtbrain.app/browser/Ace_logo_118x32_1740475997_118x32.png" 
-          alt="Ace Logo" 
+        <img
+          src="https://cdn.rtbrain.app/browser/Ace_logo_118x32_1740475997_118x32.png"
+          alt="Ace Logo"
           className="h-8"
         />
       </div>
-      <div className="flex items-center gap-10 max-md:hidden">
-        <Link to="#" className="text-[18px] text-[#080808] font-light font-['DM_Sans'] leading-[40px]">
-          Meet Nova
-        </Link>
-        <Link to="#" className="text-[18px] text-[#110B53] font-semibold font-['DM_Sans'] leading-[40px]">
-          Why AI?
-        </Link>
-        <Link to="#" className="text-[18px] text-[#080808] font-light font-['DM_Sans'] leading-[40px]">
-          FAQ
-        </Link>
-      </div>
-      <CustomButton className="px-[27px] py-[13px] text-[17px] leading-[19px] font-[500] font-['Lexend']">
-        Download Now
-      </CustomButton>
+      <a
+        href="https://chapters-jet.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <CustomButton className="px-[27px] py-[13px] text-[17px] leading-[19px] font-[500] font-['Lexend']">
+          Try Now
+        </CustomButton>
+      </a>
       <button className="hidden max-md:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
