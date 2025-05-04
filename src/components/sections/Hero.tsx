@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ heroImageUrl }) => {
       {/* Adjusted top padding slightly if needed, ensure enough space for Navbar */}
       <div className="relative z-10 flex flex-col items-center text-center pt-16 sm:pt-20 px-5 w-full">
         <h1 className="font-['Lexend'] text-[66px] font-bold text-[#080808] leading-[74px] max-w-[1500px] mb-3.5 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
-          Cut your ML paper and codebase comprehension time in half compared to chatgpt with Ace.
+          Cut your ML paper and codebase comprehension time by 50% compared to chatgpt with Ace.
         </h1>
         <a
           href="https://chapters-jet.vercel.app/"
