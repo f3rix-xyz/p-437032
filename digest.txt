@@ -267,6 +267,7 @@ File: package.json
   "type": "module",
   "scripts": {
     "dev": "vite",
+        "start": "vite", 
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
